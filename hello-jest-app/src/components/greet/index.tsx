@@ -1,7 +1,8 @@
 import React from "react";
+import { GreetProps } from "../../@types/props";
 
-function Greet(): React.ReactElement {
-  return <h1>Hello Jest!</h1>;
+function Greet(props: GreetProps): React.ReactElement {
+  return <h1>Hello {props.name ? props.name : "Jest"}!</h1>;
 }
 
 export default Greet;
