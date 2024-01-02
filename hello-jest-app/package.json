@@ -24,6 +24,9 @@
     "test:coverage": "./testCoverage.sh"
   },
   "eslintConfig": {
+    "rules": {
+      "testing-library/no-unnecessary-act": "off"
+    },
     "extends": [
       "react-app",
       "react-app/jest"
