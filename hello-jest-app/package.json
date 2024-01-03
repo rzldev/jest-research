@@ -13,6 +13,9 @@
     "@types/node": "^16.18.69",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
+    "axios": "^1.6.3",
+    "miragejs": "^0.1.48",
+    "msw": "^2.0.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,7 +25,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!axios)/'",
     "eject": "react-scripts eject",
     "test:coverage": "./testCoverage.sh"
   },
@@ -48,6 +51,10 @@
     ]
   },
   "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/(?!(@bundled-es-modules)/).*/",
+      "node_modules/(?!(msw)/).*/"
+    ],
     "coverageThreshold": {
       "global": {
         "branches": 80,
