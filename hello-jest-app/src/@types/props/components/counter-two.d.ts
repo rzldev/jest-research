@@ -1,5 +1,5 @@
 export interface CounterTwoProps {
-  count: number;
-  onIncrement?: () => void;
-  onDecrement?: () => void;
+  count: number
+  onIncrement?: () => void
+  onDecrement?: () => void
 }

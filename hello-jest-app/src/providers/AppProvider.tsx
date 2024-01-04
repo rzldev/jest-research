@@ -1,11 +1,11 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import { AppProviderProps } from "../@types/props";
+import { CssBaseline, ThemeProvider, createTheme } from '@mui/material'
+import { AppProviderProps } from '../@types/props'
 
 const theme = createTheme({
   palette: {
-    mode: "dark",
+    mode: 'dark',
   },
-});
+})
 
 export default function AppProvider(props: AppProviderProps) {
   return (
@@ -13,5 +13,5 @@ export default function AppProvider(props: AppProviderProps) {
       <CssBaseline />
       {props.children}
     </ThemeProvider>
-  );
+  )
 }

@@ -1,5 +1,5 @@
-import { Props } from "..";
+import { Props } from '..'
 
 export interface GreetProps extends Props {
-  name?: string;
+  name?: string
 }

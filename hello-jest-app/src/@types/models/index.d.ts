@@ -1,4 +1,4 @@
-import { IUser } from "./user";
+import { IUser } from './user'
 
-export * from "./user";
-export type Data = IUser;
+export * from './user'
+export type Data = IUser

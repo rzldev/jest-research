@@ -1,7 +1,7 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import AppProvider from "./providers/AppProvider";
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import AppProvider from './providers/AppProvider'
 
 function App(): React.ReactElement {
   return (
@@ -23,7 +23,7 @@ function App(): React.ReactElement {
         </header>
       </div>
     </AppProvider>
-  );
+  )
 }
 
-export default App;
+export default App

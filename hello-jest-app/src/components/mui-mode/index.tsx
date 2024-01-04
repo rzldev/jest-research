@@ -1,10 +1,10 @@
-import { Typography, useTheme } from "@mui/material";
-import React from "react";
+import { Typography, useTheme } from '@mui/material'
+import React from 'react'
 
 function MuiMode(): React.ReactElement {
-  const theme = useTheme();
+  const theme = useTheme()
 
-  return <Typography component="h1">{`${theme.palette.mode} mode`}</Typography>;
+  return <Typography component="h1">{`${theme.palette.mode} mode`}</Typography>
 }
 
-export default MuiMode;
+export default MuiMode

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Application(): React.ReactElement {
   return (
@@ -48,7 +48,7 @@ function Application(): React.ReactElement {
         <button disabled>Submit</button>
       </form>
     </React.Fragment>
-  );
+  )
 }
 
-export default Application;
+export default Application

@@ -1,21 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { Data, IUser } from "../../@types/models";
-import { fetchData } from "../../apis/apiHandlers";
-import API from "../../constants/api";
+import React, { useEffect, useState } from 'react'
+import { Data, IUser } from '../../@types/models'
+import { fetchData } from '../../apis/apiHandlers'
+import API from '../../constants/api'
 
 function Users(): React.ReactElement {
-  const [users, setUsers] = useState<IUser[]>();
-  const [error, setError] = useState<string>();
+  const [users, setUsers] = useState<IUser[]>()
+  const [error, setError] = useState<string>()
 
   useEffect(() => {
     if (!users && !error) {
       fetchData(
         API.API_ROUTE + API.USERS_ENDPOINT,
         (data: Data[]) => setUsers(data as IUser[]),
-        (errorMessage: string) => setError(errorMessage)
-      );
+        (errorMessage: string) => setError(errorMessage),
+      )
     }
-  }, [users, error]);
+  }, [users, error])
 
   return (
     <div>
@@ -25,7 +25,7 @@ function Users(): React.ReactElement {
         {users && users.map((user) => <li key={user.name}>{user.name}</li>)}
       </ul>
     </div>
-  );
+  )
 }
 
-export default Users;
+export default Users
